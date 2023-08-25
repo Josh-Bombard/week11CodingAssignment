@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+</head>
+<body class="bg-secondary">
+
+<!-- create a tic tac toe game, it needs to have 9 boxes that are clickable, turns, a heading that should day which turn it is, a button to restart the game, and an alert that either declares a winner or announces a draw -->
+
+<!-- create a container that will hold boxes and get the spacing correctly, create the 9 boxes that will be clicked on, and get rid of borders so that it looks like its an actual tic-tac-toe game on paper -->
+
+<!-- make a container that holds all of the seperate div's that hold the boxes. make rows that the boxes will live in as columns that are aligned to the center using bootstrap -->
+
+<!-- create three separate rows with the same name and class, that hold 3 boxes each -->
+
+<div class="text-center">
+<div class="container" id="game">
+<span class="row justify-content-md-center" id="turn">Begin!</span> <br>
+
+<div id="spaces" class="row justify-content-md-center">
+<div class="box col-md-auto" style="border-left: 0; border-top: 0; width: 100px;
+height: 100px;" id="box1"></div>
+<div class="box col-md-auto" style="border-left: 0; border-top: 0; width: 100px;
+height: 100px;" id="box2"></div>
+<div class="box col-md-auto" style="border-left: 0; border-top: 0; border-right: 0; width: 100px;
+height: 100px;" id="box3"></div>
+</div>
+
+
+<div id="spaces" class="row justify-content-md-center">
+<div class="box col-md-auto" style="border-left: 0; border-top: 0; width: 100px;
+height: 100px;" id="box4"></div>
+<div class="box col-md-auto" style="border-left: 0; border-top: 0; width: 100px;
+height: 100px;" id="box5"> </div>
+<div class="box col-md-auto" style="border-left: 0; border-top: 0; border-right: 0; width: 100px;
+height: 100px;" id="box6"> </div>
+</div>
+
+
+<div id="spaces" class="row justify-content-md-center">
+<div class="box col-md-auto" style="border-left: 0; border-top: 0; border-bottom: 0; width: 100px;
+height: 100px;" id="box7"></div>
+<div class="box col-md-auto" style="border-left: 0; border-top: 0; border-bottom: 0; width: 100px;
+height: 100px;" id="box8"></div>
+<div class="box col-md-auto" style="border-left: 0; border-top: 0; border-right: 0; border-bottom: 0; width: 100px;
+height: 100px;" id="box9"></div>
+</div>
+
+<br><br>
+
+<button class="btn btn-rounded btn-dark row col-md-auto" id="replay">Play Again!</button>
+</div>
+</div>
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
